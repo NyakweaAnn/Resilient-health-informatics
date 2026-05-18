@@ -9,7 +9,7 @@ The architecture of this form is engineered with an **"Offline-First" philosophy
 * **Edge-Level Constraints:** Implements deterministic boundary parameters on physiological metrics (e.g., axillary temperature checks between `34.0°C` and `42.0°C`) to eliminate typographical entry errors before the database write-action occurs.
 * **Contextual Conditional Visibility (Skip Logic):** Utilizes relational evaluation rules (`${patient_gender} = 'female'`) to dynamically display or encapsulate specific clinical fields, heavily reducing survey fatigue for high-stress frontline responders.
 * **Metadata Uniformity:** Restricts data collection points to explicit key-value dropdown pairings (`choices` sheet architecture), systematically eliminating free-text fields to ensure clean downstream analytical joins.
-* **Automated Outbreak Detection Engine (outbreak_alert_system.py): Implements a rolling-window statistical surveillance algorithm ($\mu + 2\sigma$) using pandas and numpy to programmatically flag syndromic case spikes, eliminating the lag between field entry and epidemiological response.
+* Automated Outbreak Detection Engine (outbreak_alert_system.py): Implements a rolling-window statistical surveillance algorithm ($\mu + 2\sigma$) using pandas and numpy to programmatically flag syndromic case spikes, eliminating the lag between field entry and epidemiological response.
 
 ## 🚀 How to Preview
 1. Download the `emergency_surveillance_template.xlsx` file from this repository.
